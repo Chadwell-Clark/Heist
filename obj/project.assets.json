@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Chad\\.nuget\\packages\\": {}
+    "C:\\Users\\Preston\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chad\\workspace\\Heist\\heist.csproj",
+      "projectUniqueName": "C:\\Users\\Preston\\workspace\\csharp\\UsualSuspects-Heist\\heist.csproj",
       "projectName": "heist",
-      "projectPath": "C:\\Users\\Chad\\workspace\\Heist\\heist.csproj",
-      "packagesPath": "C:\\Users\\Chad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chad\\workspace\\Heist\\obj\\",
+      "projectPath": "C:\\Users\\Preston\\workspace\\csharp\\UsualSuspects-Heist\\heist.csproj",
+      "packagesPath": "C:\\Users\\Preston\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Preston\\workspace\\csharp\\UsualSuspects-Heist\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Chad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Preston\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
