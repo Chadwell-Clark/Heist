@@ -9,11 +9,22 @@ namespace Heist
         {
             Console.WriteLine("Plan Your Heist");
             Team team = new Team();
-            int bankDifficulty = 100;
+            int bankDifficulty = 0;
             int teamSkill = 0;
             int numOfRuns = 1;
             int totalDifficulty = 0;
+            int successfulRun = 0;
+            int failedRun = 0;
+
+            Console.Write("Enter the bank difficulty number > ");
+            bankDifficulty = int.Parse(Console.ReadLine());
+
             UserInput();
+            TrialRuns();
+
+            Console.WriteLine();
+            Console.WriteLine($"Successful Heist Runs: {successfulRun}");
+            Console.WriteLine($"Failed Heist Runs: {failedRun}");
 
             //Amount of runs.
             //For loop that keeps the user inputted data the same but changes heistLuck and checks the outcome each time.
@@ -41,26 +52,28 @@ namespace Heist
                         Console.WriteLine(Member.GetDescription());
                         teamSkill += Member.SkillLevel;
                     }
-                    Console.WriteLine($"Total team skill level: {teamSkill}");
-                    Console.WriteLine($"Bank's difficulty level is {totalDifficulty}");
                     Console.Write("How many trial runs do you want? > ");
                     numOfRuns = int.Parse(Console.ReadLine());
                 }
             }
             void TrialRuns()
             {
-                int heistLuck = new Random().Next(-10, 10);
-                totalDifficulty = bankDifficulty + heistLuck;
 
-                for (int i = 0; i <= numOfRuns; i++)
+                for (int i = 1; i <= numOfRuns; i++)
                 {
-                    if (teamSkill >= bankDifficulty)
+                    int heistLuck = new Random().Next(-10, 10);
+                    totalDifficulty = bankDifficulty + heistLuck;
+                    Console.WriteLine($"Total team skill level: {teamSkill}");
+                    Console.WriteLine($"Bank's difficulty level is {totalDifficulty}");
+                    if (teamSkill >= totalDifficulty)
                     {
                         Console.WriteLine("Successful bank heist!");
+                        successfulRun++;
                     }
                     else
                     {
                         Console.WriteLine("Failed.");
+                        failedRun++;
                     }
                 }
             }
