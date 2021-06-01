@@ -18,7 +18,18 @@ namespace Heist
             int failedRun = 0;
 
             Console.Write("Enter the bank difficulty number > ");
-            bankDifficulty = int.Parse(Console.ReadLine());
+            try
+            {
+
+                bankDifficulty = int.Parse(Console.ReadLine());
+            }
+            catch (System.FormatException)
+            {
+                Thread.Sleep(1000);
+                Console.WriteLine("Difficulty must be a number");
+                Thread.Sleep(1500);
+                Main();
+            }
 
             UserInput();
             TrialRuns();
@@ -44,10 +55,16 @@ namespace Heist
             {
                 Console.Write("Enter team member name > ");
                 string addName = Console.ReadLine();
+                int addSkillLevel = 0;
+                bool skillLevelCheck;
                 if (addName != "")
                 {
-                    Console.Write("Enter team member's skill level > ");
-                    int addSkillLevel = int.Parse(Console.ReadLine());
+                    do
+                    {
+                        Console.Write("Enter team member's skill level between 1 and 10 > ");
+                        skillLevelCheck = int.TryParse(Console.ReadLine(), out addSkillLevel);
+                    }
+                    while (!skillLevelCheck);
                     Console.Write("Enter team member courage factor (a number between 0.0 and 2.0 > ");
                     float addCourageFactor = float.Parse(Console.ReadLine());
                     Console.WriteLine(@"
