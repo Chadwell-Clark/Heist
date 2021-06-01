@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Heist
 {
@@ -26,6 +27,17 @@ namespace Heist
             Console.WriteLine($"Successful Heist Runs: {successfulRun}");
             Console.WriteLine($"Failed Heist Runs: {failedRun}");
 
+
+            Thread.Sleep(1000);
+
+            if (failedRun > successfulRun)
+            {
+                Console.WriteLine("Looks like the law finally caught up to you!");
+            }
+            else
+            {
+                Console.WriteLine("You guys took your earnings, and managed to leave your life of crime behind. Good work!");
+            }
             //Amount of runs.
             //For loop that keeps the user inputted data the same but changes heistLuck and checks the outcome each time.
             void UserInput()
@@ -76,6 +88,7 @@ namespace Heist
                         failedRun++;
                     }
                 }
+
             }
         }
     }
