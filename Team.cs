@@ -8,5 +8,10 @@ namespace Heist
 
         public List<TeamMember> Members { get; set; }
 
+        public Team()
+        {
+            Members = new List<TeamMember>();
+        }
+
     }
 }
