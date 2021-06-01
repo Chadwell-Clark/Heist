@@ -57,6 +57,8 @@ namespace Heist
                 string addName = Console.ReadLine();
                 int addSkillLevel = 0;
                 bool skillLevelCheck;
+                float addCourageFactor = 0;
+                bool courageFactorCheck;
                 if (addName != "")
                 {
                     do
@@ -65,10 +67,30 @@ namespace Heist
                         skillLevelCheck = int.TryParse(Console.ReadLine(), out addSkillLevel);
                     }
                     while (!skillLevelCheck);
+
+                    //do/while loops will make a specific action happen (this action can be declared inside the "do" portion) 
+                    //the "while" is simply looking for a true boolean result. if the result is true, then it will continue onto the next line of code. if it is false, then it will 
+                    //always run the "do" portion until it is true.
+                    do
+                    {
                     Console.Write("Enter team member courage factor (a number between 0.0 and 2.0 > ");
-                    float addCourageFactor = float.Parse(Console.ReadLine());
+                    courageFactorCheck = float.TryParse(Console.ReadLine(), out addCourageFactor);
+                    Console.WriteLine(courageFactorCheck);
+                    Console.WriteLine(addCourageFactor);
+                    //WHAT THE HELL IS HAPPENING?!?!?!?! dont panic baby, look at the comments above to get the over all gist. 
+                    //seperate the while statemnt into 3 parts (these can be seen by seperating the parts with the "&&")
+                    } while(!(courageFactorCheck && addCourageFactor >= 0.0 && addCourageFactor <= 2.0));
+
+
+
+
+
+                    bool hello =\
+                    if(hello)
+
                     Console.WriteLine(@"
                     ");
+
                     TeamMember newMember = new TeamMember(addName, addSkillLevel, addCourageFactor);
                     team.Members.Add(newMember);
                     UserInput();

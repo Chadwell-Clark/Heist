@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\workspace\\UsualSuspects-Heist\\heist.csproj": {}
+    "C:\\Users\\Preston\\workspace\\csharp\\UsualSuspects-Heist\\heist.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\workspace\\UsualSuspects-Heist\\heist.csproj": {
+    "C:\\Users\\Preston\\workspace\\csharp\\UsualSuspects-Heist\\heist.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\workspace\\UsualSuspects-Heist\\heist.csproj",
+        "projectUniqueName": "C:\\Users\\Preston\\workspace\\csharp\\UsualSuspects-Heist\\heist.csproj",
         "projectName": "heist",
-        "projectPath": "C:\\Users\\User\\workspace\\UsualSuspects-Heist\\heist.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\workspace\\UsualSuspects-Heist\\obj\\",
+        "projectPath": "C:\\Users\\Preston\\workspace\\csharp\\UsualSuspects-Heist\\heist.csproj",
+        "packagesPath": "C:\\Users\\Preston\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Preston\\workspace\\csharp\\UsualSuspects-Heist\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Preston\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
