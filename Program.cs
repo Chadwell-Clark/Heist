@@ -73,20 +73,20 @@ namespace Heist
                     //always run the "do" portion until it is true.
                     do
                     {
-                    Console.Write("Enter team member courage factor (a number between 0.0 and 2.0 > ");
-                    courageFactorCheck = float.TryParse(Console.ReadLine(), out addCourageFactor);
-                    Console.WriteLine(courageFactorCheck);
-                    Console.WriteLine(addCourageFactor);
-                    //WHAT THE HELL IS HAPPENING?!?!?!?! dont panic baby, look at the comments above to get the over all gist. 
-                    //seperate the while statemnt into 3 parts (these can be seen by seperating the parts with the "&&")
-                    } while(!(courageFactorCheck && addCourageFactor >= 0.0 && addCourageFactor <= 2.0));
+                        Console.Write("Enter team member courage factor (a number between 0.0 and 2.0 > ");
+                        courageFactorCheck = float.TryParse(Console.ReadLine(), out addCourageFactor);
+                        // Console.WriteLine(courageFactorCheck);
+                        // Console.WriteLine(addCourageFactor);
 
+                        //WHAT THE HELL IS HAPPENING?!?!?!?! dont panic baby, look at the comments above to get the over all gist. 
+                        //seperate the while statemnt into 3 parts (these can be seen by seperating the parts with the "&&")
 
+                        // WHILE courageFactorCheck is not true (inputted data is not a float) or
+                        //       courageFactorCheck is true AND the number is not between 0.0 and 2.0
+                        //          keep DO-ing the stuff in the brackets
 
+                    } while (!(courageFactorCheck && addCourageFactor >= 0.0 && addCourageFactor <= 2.0));
 
-
-                    bool hello =\
-                    if(hello)
 
                     Console.WriteLine(@"
                     ");
