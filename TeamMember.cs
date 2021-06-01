@@ -1,6 +1,6 @@
 namespace Heist
 {
-    internal class TeamMember
+    public class TeamMember
     {
         public string Name { get; set; }
         public int SkillLevel { get; set; }
@@ -12,5 +12,17 @@ namespace Heist
             SkillLevel = skillLevel;
             CourageFactor = courageFactor;
         }
+
+        public string GetDescription()
+        {
+            return ($@"
+            Name: {Name}
+            SkillLevel: { SkillLevel}
+            Courage Factor: { CourageFactor}
+            "
+            );
+        }
+
+
     }
 }
