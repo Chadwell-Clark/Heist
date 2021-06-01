@@ -10,7 +10,7 @@ namespace Heist
             Console.WriteLine("Plan Your Heist");
             Team team = new Team();
             int bankDifficulty = 100;
-            int teamSkill;
+            int teamSkill = 0;
             UserInput();
 
             void UserInput()
@@ -33,6 +33,7 @@ namespace Heist
                     foreach (TeamMember Member in team.Members)
                     {
                         Console.WriteLine(Member.GetDescription());
+                        teamSkill += Member.SkillLevel;
                     }
                 }
             }
