@@ -8,26 +8,27 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Joel\\.nuget\\packages\\": {}
+    "C:\\Users\\Chad\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joel\\workspace\\heist\\heist.csproj",
+      "projectUniqueName": "C:\\Users\\Chad\\workspace\\Heist\\heist.csproj",
       "projectName": "heist",
-      "projectPath": "C:\\Users\\Joel\\workspace\\heist\\heist.csproj",
-      "packagesPath": "C:\\Users\\Joel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Joel\\workspace\\heist\\obj\\",
+      "projectPath": "C:\\Users\\Chad\\workspace\\Heist\\heist.csproj",
+      "packagesPath": "C:\\Users\\Chad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Chad\\workspace\\Heist\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Joel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Chad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
